@@ -34,6 +34,7 @@ class calculadora {
         }
     }
 
+    //Para el caso de la potencia, el primer argumento es el valor base y sel segundo es la potencia, en este caso 7 es el valor base y 5 la potencia
     potencia(): number {
         let valor: number = 1;
 
@@ -42,7 +43,7 @@ class calculadora {
         }
         return valor;
     }
-
+ //Para el caso del factorial, se toma el primer argumento del objeto, para este caso se sacara el factorial de 7
     factorial(): number {
         let valor: number = 1;
         for (let i = this.numero1; i > 0; i--) {
@@ -54,7 +55,7 @@ class calculadora {
 }
 
 
-let calculadorsita = new calculadora(6, 3);
+let calculadorsita = new calculadora(7, 5);
 
 console.log(calculadorsita.suma());
 console.log(calculadorsita.resta());
