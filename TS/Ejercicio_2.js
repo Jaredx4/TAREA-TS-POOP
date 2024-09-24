@@ -21,6 +21,7 @@ var calculadora = /** @class */ (function () {
             return null;
         }
     };
+    //Para el caso de la potencia, el primer argumento es el valor base y sel segundo es la potencia, en este caso 7 es el valor base y 5 la potencia
     calculadora.prototype.potencia = function () {
         var valor = 1;
         for (var i = 1; i <= this.numero2; i++) {
@@ -28,6 +29,7 @@ var calculadora = /** @class */ (function () {
         }
         return valor;
     };
+    //Para el caso del factorial, se toma el primer argumento del objeto, para este caso se sacara el factorial de 7
     calculadora.prototype.factorial = function () {
         var valor = 1;
         for (var i = this.numero1; i > 0; i--) {
@@ -37,7 +39,7 @@ var calculadora = /** @class */ (function () {
     };
     return calculadora;
 }());
-var calculadorsita = new calculadora(6, 3);
+var calculadorsita = new calculadora(7, 5);
 console.log(calculadorsita.suma());
 console.log(calculadorsita.resta());
 console.log(calculadorsita.multiplicar());
