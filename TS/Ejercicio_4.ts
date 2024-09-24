@@ -24,7 +24,7 @@ class cuenta {
     retirar(valor: number): void {
         let total: number = this.cantidad - valor;
 
-        if (total > 5) {
+        if (total > 5 && valor >=5) {
             console.log(`Se ha retirado: $ ${valor}`);
             console.log(`Queda en la cuenta un total de: $ ${total}`);
         } else {
@@ -39,8 +39,8 @@ class cuenta {
     }
 }
 
-let cuentita = new cuenta("Cuenta LJ", 1500, "Ahorro", 1211300);
+let cuentita = new cuenta("Cuenta LJ",1500, "Ahorro", 1211300);
 
 cuentita.imprimirDatos();
 cuentita.depositar();
-cuentita.retirar(1154);
+cuentita.retirar(1255);

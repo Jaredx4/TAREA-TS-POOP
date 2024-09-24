@@ -15,9 +15,9 @@ var cuenta = /** @class */ (function () {
     };
     cuenta.prototype.retirar = function (valor) {
         var total = this.cantidad - valor;
-        if (total > 5) {
-            console.log("Se ha retirado $ ".concat(valor));
-            console.log("Queda en la cuenta un total de $ ".concat(total));
+        if (total > 5 && valor >= 5) {
+            console.log("Se ha retirado: $ ".concat(valor));
+            console.log("Queda en la cuenta un total de: $ ".concat(total));
         }
         else {
             console.log("Fondos insuficientes");
@@ -33,4 +33,4 @@ var cuenta = /** @class */ (function () {
 var cuentita = new cuenta("Cuenta LJ", 1500, "Ahorro", 1211300);
 cuentita.imprimirDatos();
 cuentita.depositar();
-cuentita.retirar(1154);
+cuentita.retirar(1255);
