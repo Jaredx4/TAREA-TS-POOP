@@ -25,8 +25,8 @@ class cuenta {
         let total: number = this.cantidad - valor;
 
         if (total > 5) {
-            console.log(`Se ha retirado $ ${valor}`);
-            console.log(`Queda en la cuenta un total de $ ${total}`);
+            console.log(`Se ha retirado: $ ${valor}`);
+            console.log(`Queda en la cuenta un total de: $ ${total}`);
         } else {
             console.log("Fondos insuficientes");
         }
